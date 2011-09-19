@@ -24,4 +24,12 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+  
+  # Render Views globally
+  config.render_views
+end
+
+# Webrat configuration
+Webrat.configure do |config|
+  config.mode = :rails
 end
